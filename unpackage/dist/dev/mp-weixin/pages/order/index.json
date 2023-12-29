@@ -1,0 +1,13 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "提交订单",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#333333",
+  "usingComponents": {
+    "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar",
+    "pikers": "/components/uni-piker/index",
+    "address-pop": "/pages/order/components/address",
+    "dish-detail": "/pages/order/components/dishDetail",
+    "dish-info": "/pages/order/components/dishInfo"
+  }
+}

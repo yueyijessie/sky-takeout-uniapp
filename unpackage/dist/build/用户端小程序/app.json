@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order/index",
+    "pages/details/index",
+    "pages/pay/index",
+    "pages/success/index",
+    "pages/nonet/index",
+    "pages/address/address",
+    "pages/remark/index",
+    "pages/my/my",
+    "pages/addOrEditAddress/addOrEditAddress",
+    "pages/historyOrder/historyOrder"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "苍穹外卖",
+    "navigationBarBackgroundColor": "#E95F3C",
+    "backgroundColor": "#F8F8F8"
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "usingComponents": {}
+}

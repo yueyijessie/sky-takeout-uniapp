@@ -1,0 +1,1 @@
+.bottom-box{width:730rpx}.bottom-box .bottom-item{width:730rpx;height:100rpx;line-height:100rpx;text-align:center}.bottom-box .bottom-item .line{display:inline-block;width:200rpx;border-bottom:1px solid #989e98;vertical-align:middle}.bottom-box .bottom-item .title{color:#969799;font-size:28rpx}

@@ -1,0 +1,1 @@
+<view class="empty-box data-v-4f89adfc"><image class="empty-img data-v-4f89adfc" src="./../../static/no_adress.png" mode></image><view class="empty-des data-v-4f89adfc">{{textLabel}}</view></view>

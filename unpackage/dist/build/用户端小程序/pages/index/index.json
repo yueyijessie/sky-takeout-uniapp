@@ -1,0 +1,11 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "苍穹外卖",
+  "usingComponents": {
+    "nav-bar": "/pages/common/Navbar/navbar",
+    "phone": "/components/uni-phone/index",
+    "pop-mask": "/pages/index/components/popMask",
+    "pop-cart": "/pages/index/components/popCart",
+    "dish-detail": "/pages/index/components/dishDetail"
+  }
+}

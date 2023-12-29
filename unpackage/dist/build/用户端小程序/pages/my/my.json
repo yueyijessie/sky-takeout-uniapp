@@ -1,0 +1,12 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "个人中心",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#ffc200",
+  "usingComponents": {
+    "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar",
+    "head-info": "/pages/my/components/headInfo",
+    "order-info": "/pages/my/components/orderInfo",
+    "order-list": "/pages/my/components/orderList"
+  }
+}

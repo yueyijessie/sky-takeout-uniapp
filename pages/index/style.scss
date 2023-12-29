@@ -1,0 +1,734 @@
+$min-font-color: #20232a;
+$desc-font-color: #818693;
+
+.home_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 160rpx;
+  position: relative;
+  /* #ifdef H5 */
+  // padding-top: 100rpx;
+  /* #endif */
+
+  // .navBar {
+  // 	position: fixed;
+  // 	z-index: 99;
+  // 	top: 0;
+  // 	height: 160rpx;
+  // 	width: 100%;
+  // 	padding-top: var(--status-bar-height);
+  // 	padding-left: 20rpx;
+  // 	box-sizing: border-box;
+  // 	background: linear-gradient(90deg, #E94E3C, #E9793C);
+  // 	/* #ifdef H5 */
+  // 	padding-top: 20rpx;
+  // 	/* #endif */
+  // 	.leftNav{
+  // 		background: linear-gradient(90deg, #E94E3C, #E9793C);
+  // 	}
+  // 	.logo {
+  // 		height: 66rpx;
+  // 		width: 184rpx;
+  // 	}
+  // }
+  // .restaurant_info_box{
+  // 	position: relative;
+  // 	color: $min-font-color;
+  // 	width: 100%;
+  // 	height: 160rpx;
+  // 	background: linear-gradient(90deg, #E94E3C, #E9793C);
+  // 	.restaurant_info{
+  // 		position: absolute;
+  // 		z-index: 9;
+  // 		left: 30rpx;
+  // 		// transform: translateX(-50%);
+  // 		display: flex;
+  // 		width: calc(100% - 60rpx);
+  // 		// margin:0 auto;
+  // 		background: rgba(255,255,255,0.97);
+  // 		box-shadow: 0px 2px 5px 0px rgba(69,69,69,0.10);
+  // 		border-radius: 8px;
+  // 		padding: 40rpx;
+  // 		box-sizing: border-box;
+  // 		.left_info{
+  // 			flex: 1;
+  // 			.title{
+  // 				color: $min-font-color;
+  // 				font-size: 36rpx;
+  // 			}
+  // 			.position{
+  // 				color: $desc-font-color;
+  // 				font-size: 36rpx;
+  // 			}
+  // 		}
+  // 		.restaurant_logo{
+  // 			.restaurant_logo_img{
+  // 				display: block;
+  // 				width: 320rpx;
+  // 				height: 120rpx;
+  // 				border-radius: 16rpx;
+  // 			}
+  // 		}
+  // 	}
+  // }
+  // 展示悬浮盒子样式
+  .restaurant_info_box {
+    position: relative;
+    color: $min-font-color;
+    width: 100%;
+    // height: 236rpx;
+    // // height: 160rpx;
+    background: linear-gradient(
+      184deg,
+      rgba(0, 0, 0, 0.35) 25%,
+      rgba(51, 51, 51, 0) 96%
+    );
+    .restaurant_info {
+      position: absolute;
+      z-index: 9;
+      top: 10rpx;
+      left: 30rpx;
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - 60rpx);
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 4rpx 10rpx 0px rgba(69, 69, 69, 0.1);
+      border-radius: 8rpx;
+      padding: 14rpx 18rpx 22rpx 16rpx;
+      box-sizing: border-box;
+      // 上部
+      .info_top {
+        flex: 1;
+        display: flex;
+        padding-bottom: 10rpx;
+        border-bottom: 1px dashed #ebebeb;
+        .info_top_left {
+          margin-right: 20rpx;
+          padding-top: 10rpx;
+          box-sizing: border-box;
+          image {
+            width: 86rpx;
+            height: 86rpx;
+            // background: #333333;
+            // border-radius: 12rpx;
+            // padding: 10rpx;
+            // box-sizing: border-box;
+          }
+        }
+        .info_top_right {
+          flex: 1;
+          .right_title {
+            display: flex;
+            align-items: center;
+            text {
+              font-size: 36rpx;
+              font-family: PingFangSC, PingFangSC-Medium;
+              font-weight: 500;
+              text-align: left;
+              color: #20232a;
+              line-height: 50rpx;
+            }
+          }
+          .right_details {
+            width: 100%;
+            display: flex;
+            .details_flex {
+              white-space: nowrap;
+              // 图片
+              .top_icon {
+                width: 28rpx;
+                height: 28rpx;
+                background: url(../../static/length.png) no-repeat;
+                background-size: contain;
+                display: inline-block;
+                vertical-align: middle;
+                margin-bottom: 4rpx;
+                margin-right: 6rpx;
+              }
+              // 文本
+              .icon_text {
+                // font-size: 22rpx;
+                font-size: 24rpx;
+                font-family: PingFangSC, PingFangSC-Regular;
+                font-weight: 400;
+                text-align: center;
+                color: #333333;
+                line-height: 36rpx;
+                padding-right: 20rpx;
+              }
+            }
+            .test {
+              flex: 1;
+            }
+            .vertical-line {
+              display: inline-block;
+              width: 1px;
+              height: 20rpx;
+              line-height: 20rpx;
+              margin: 16rpx 10rpx;
+              background-color: #ccc;
+            }
+          }
+        }
+      }
+      // 下部
+      .info_bottom {
+        margin-top: 16rpx;
+        display: flex;
+        font-size: 24rpx;
+        font-family: PingFangSC, PingFangSC-Regular;
+        font-weight: 400;
+        text-align: left;
+        color: #9b9b9b;
+        line-height: 34rpx;
+        padding: 0 4rpx;
+        & > view {
+          &:first-child {
+            flex: 1;
+          }
+        }
+        .word {
+          display: block;
+          padding-bottom: 20rpx;
+        }
+        .address {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          icon {
+            background: url(../../image/address.png) no-repeat 0 0;
+            background-size: contain;
+            display: inline-block;
+            width: 20rpx;
+            height: 34rpx;
+            margin-right: 10rpx;
+            // vertical-align:text-bottom;
+            margin-top: -8rpx;
+          }
+        }
+        .phone {
+          padding: 10rpx 20rpx 10rpx 40rpx;
+          margin-left: 12rpx;
+          margin-top: 12rpx;
+          border-left: 1px solid rgba(219, 219, 219, 0.45);
+          .phoneIcon {
+            vertical-align: -webkit-baseline-middle;
+          }
+        }
+      }
+    }
+  }
+  // 结束
+  .restaurant_menu_list {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 260rpx);
+    margin-top: 135rpx;
+    .type_list {
+      display: flex;
+      overflow: hidden;
+      background-color: #f3f4f7;
+      width: 168rpx;
+      padding-top: 140rpx;
+      box-sizing: border-box;
+      padding-bottom: 60rpx;
+      position: relative;
+      font-size: 26rpx;
+      .type_item {
+        // height: 110rpx;
+        line-height: 100rpx;
+        text-align: left;
+        padding-left: 20rpx;
+        padding-right: 26rpx;
+        font-family: PingFangSC, PingFangSC-Regular;
+        font-weight: 400;
+        color: #666666;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .item {
+          line-height: 100rpx;
+        }
+        .allLine {
+          padding: 16rpx 0;
+          line-height: 34rpx;
+        }
+      }
+      .active {
+        color: #333333;
+        background-color: #fff;
+        position: relative;
+        font-family: PingFangSC, PingFangSC-Medium;
+        font-weight: 500;
+        &::after,
+        &::before {
+          // content: '';
+          // display: block;
+          // position: absolute;
+          // height: 30rpx;
+          // width: 200rpx;
+          // bottom: -30rpx;
+          // background-color: #fff;
+        }
+        &::after {
+          background-color: #f3f4f7;
+          border-radius: 0 15rpx 0 0;
+        }
+      }
+      .seize_seat {
+        width: 100%;
+        height: 160rpx;
+      }
+    }
+    .vegetable_order_list {
+      background-color: #fff;
+      padding-top: 140rpx;
+      box-sizing: border-box;
+      height: calc(100% - 0rpx);
+      flex: 1;
+      position: relative;
+      .type_item {
+        display: flex;
+        // margin: 20rpx 0;
+        padding-top: 20rpx;
+        .dish_img {
+          width: 172rpx;
+          margin: 0 30rpx;
+          .dish_img_url {
+            display: block;
+            width: 172rpx;
+            height: 172rpx;
+            border-radius: 8rpx;
+          }
+        }
+        .dish_info {
+          position: relative;
+          flex: 1;
+          .dish_name {
+            font-size: 32rpx;
+            font-family: PingFangSC, PingFangSC-Semibold;
+            font-weight: 600;
+            color: #333333;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: calc(100vw - 452rpx);
+          }
+          .dish_label,
+          .dish_num {
+            font-size: 22rpx;
+            line-height: 40rpx;
+            font-family: PingFangSC, PingFangSC-Regular;
+            font-weight: 400;
+            color: #666666;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: calc(100vw - 452rpx);
+          }
+          .dish_price {
+            height: 72rpx;
+            line-height: 72rpx;
+            font-size: 36rpx;
+            color: #e94e3c;
+            font-family: DIN, DIN-Medium;
+            font-weight: 500;
+            bottom: 0;
+            letter-spacing: -0.8px;
+            .ico {
+              font-size: 24rpx;
+            }
+          }
+          .dish_active {
+            position: absolute;
+            right: 20rpx;
+            bottom: 0rpx;
+            display: flex;
+            .dish_add,
+            .dish_red {
+              display: block;
+              width: 72rpx;
+              height: 72rpx;
+            }
+            .dish_number {
+              padding: 0 10rpx;
+              line-height: 72rpx;
+              font-size: 30rpx;
+              font-family: PingFangSC, PingFangSC-Medium;
+              font-weight: 500;
+            }
+          }
+          .dish_active_btn {
+            position: absolute;
+            right: 20rpx;
+            bottom: 15rpx;
+            display: flex;
+            .check_but {
+              width: 128rpx;
+              height: 48rpx;
+              line-height: 48rpx;
+              text-align: center;
+              opacity: 1;
+              background: #ffc200;
+              border-radius: 24rpx;
+              font-size: 12px;
+              font-family: PingFangSC, PingFangSC-Medium;
+              font-weight: 500;
+              color: #333333;
+            }
+          }
+        }
+      }
+      &::before {
+        // content: "";
+        // position: absolute;
+        // width: calc(100vw - 200rpx);
+        // height: 120rpx;
+        // z-index: 9;
+        // background: linear-gradient(
+        //   0deg,
+        //   rgba(255, 255, 255, 1) 10%,
+        //   rgba(255, 255, 255, 0)
+        // );
+        // bottom: 0px;
+        // left: 0px;
+      }
+      .seize_seat {
+        width: 100%;
+        height: 136rpx;
+      }
+    }
+    .no_dish {
+      flex: 1;
+      background-color: #ffffff;
+      color: #9b9b9b;
+      font-family: PingFangSC, PingFangSC-Regular;
+      font-weight: 400;
+      font-size: 26rpx;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  // 打烊
+  .restaurant_close{
+    font-size: 50rpx;
+    color: #333;
+    margin-top: 340rpx;
+  }
+
+  .footer_order_buttom {
+    position: fixed;
+    display: flex;
+    bottom: 48rpx;
+    width: calc(100% - 60rpx);
+    height: 88rpx;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 50rpx;
+    box-shadow: 0px 6rpx 10rpx 0px rgba(0, 0, 0, 0.25);
+    z-index: 99;
+    padding: 0rpx 10rpx;
+    box-sizing: border-box;
+    .order_number {
+      position: relative;
+      width: 120rpx;
+      .order_number_icon {
+        position: absolute;
+        display: block;
+        width: 120rpx;
+        height: 118rpx;
+        left: 12rpx;
+        bottom: 0px;
+      }
+      .order_dish_num {
+        position: absolute;
+        display: inline-block;
+        z-index: 9;
+        // width: 36rpx;
+        min-width: 12rpx;
+        height: 36rpx;
+        line-height: 36rpx;
+        padding: 0 12rpx;
+        left: 92rpx;
+        font-size: 24rpx;
+        top: -8rpx;
+        // text-align: center;
+        border-radius: 20rpx;
+        background-color: #e94e3c;
+        color: #fff;
+        font-weight: 500;
+      }
+    }
+    .order_price {
+      flex: 1;
+      text-align: left;
+      color: #fff;
+      line-height: 88rpx;
+      padding-left: 34rpx;
+      box-sizing: border-box;
+      font-size: 36rpx;
+      font-family: DIN, DIN-Medium;
+      font-weight: 500;
+      .ico {
+        font-size: 24rpx;
+      }
+    }
+    .order_but {
+      background-color: #d8d8d8;
+      width: 204rpx;
+      height: 72rpx;
+      line-height: 72rpx;
+      border-radius: 72rpx;
+      color: #fff;
+      text-align: center;
+      margin-top: 8rpx;
+    }
+  }
+  .orderCar {
+    flex: 1;
+    display: flex;
+  }
+  .order_form {
+    .order_but {
+      font-family: PingFangSC, PingFangSC-Medium;
+      font-weight: 500;
+      color: #333333;
+      background: #ffc200;
+    }
+  }
+  .pop_mask {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    .pop {
+      width: 60%;
+      position: relative;
+      top: 40%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      background: #fff;
+      border-radius: 20rpx;
+      .open_table_cont {
+        padding-top: 60rpx;
+        .cont_tit {
+          font-size: 36rpx;
+          color: #20232a;
+          text-align: center;
+        }
+        .people_num_act {
+          display: flex;
+          width: 60%;
+          margin: 0 auto;
+          .red,
+          .add {
+            width: 112rpx;
+            height: 112rpx;
+          }
+          .people_num {
+            line-height: 112rpx;
+            flex: 1;
+            text-align: center;
+            font-size: 30rpx;
+            color: #20232a;
+          }
+        }
+      }
+      .butList {
+        background: #f7f7f7;
+        display: flex;
+        text-align: center;
+        border-radius: 20rpx;
+        .define {
+          flex: 1;
+          font-size: 36rpx;
+          line-height: 100rpx;
+        }
+        .cancel {
+          flex: 1;
+          font-size: 36rpx;
+          line-height: 100rpx;
+        }
+      }
+    }
+
+    .more_norm_pop {
+      width: calc(100vw - 160rpx);
+      box-sizing: border-box;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      padding: 40rpx;
+      transform: translateX(-50%) translateY(-50%);
+      background: #fff;
+      border-radius: 20rpx;
+      .div_big_image {
+        width: 100%;
+        border-radius: 10rpx;
+      }
+      .title {
+        font-size: 40rpx;
+        line-height: 80rpx;
+        text-align: center;
+        font-weight: bold;
+      }
+      .items_cont {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -14rpx;
+        max-height: 50vh;
+        .item_row {
+          .flavor_name {
+            height: 40rpx;
+            opacity: 1;
+            font-size: 28rpx;
+            font-family: PingFangSC, PingFangSC-Regular;
+            font-weight: 400;
+            text-align: left;
+            color: #666666;
+            line-height: 40rpx;
+            padding-left: 10rpx;
+            padding-top: 20rpx;
+          }
+          .flavor_item {
+            display: flex;
+            flex-wrap: wrap;
+            .item {
+              border: 1px solid #ffb302;
+              border-radius: 12rpx;
+              margin: 20rpx 10rpx;
+              padding: 0 26rpx;
+              height: 60rpx;
+              line-height: 60rpx;
+              font-family: PingFangSC, PingFangSC-Regular;
+              font-weight: 400;
+              color: #333333;
+            }
+            .act {
+              // background: linear-gradient(144deg, #ffda05 18%, #ffb302 80%);
+              background: #ffc200;
+              border: 1px solid #ffc200;
+              font-family: PingFangSC, PingFangSC-Medium;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      .but_item {
+        display: flex;
+        position: relative;
+        flex: 1;
+        padding-left: 10rpx;
+        margin: 34rpx 0 -20rpx 0;
+        .price {
+          text-align: left;
+          color: #e94e3c;
+          line-height: 88rpx;
+          box-sizing: border-box;
+          font-size: 48rpx;
+          font-family: DIN, DIN-Medium;
+          font-weight: 500;
+          .ico {
+            font-size: 28rpx;
+          }
+        }
+        .active {
+          position: absolute;
+          right: 0rpx;
+          bottom: 20rpx;
+          display: flex;
+          .dish_add,
+          .dish_red {
+            display: block;
+            width: 72rpx;
+            height: 72rpx;
+          }
+          .dish_number {
+            padding: 0 10rpx;
+            line-height: 72rpx;
+            font-size: 30rpx;
+            font-family: PingFangSC, PingFangSC-Medium;
+            font-weight: 500;
+          }
+          .dish_card_add {
+            width: 200rpx;
+            height: 60rpx;
+            line-height: 60rpx;
+            text-align: center;
+            font-weight: 500;
+            font-size: 28rpx;
+            opacity: 1;
+            // background: linear-gradient(144deg, #ffda05 18%, #ffb302 80%);
+            background: #ffc200;
+            border-radius: 30rpx;
+          }
+        }
+      }
+    }
+    .lodding {
+      position: relative;
+      top: 40%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .lodding_ico {
+        width: 160rpx;
+        height: 160rpx;
+        border-radius: 100%;
+      }
+    }
+    .close {
+      position: absolute;
+      bottom: -180rpx;
+      left: 50%;
+      transform: translateX(-50%);
+      .close_img {
+        width: 88rpx;
+        height: 88rpx;
+      }
+    }
+  }
+  .mask-box {
+    position: absolute;
+    height: 136rpx;
+    width: 100%;
+    bottom: 0;
+    background-color: #f6f6f6;
+    opacity: 0.5;
+  }
+}
+.businessStatus {
+  display: inline-block;
+  width: 92rpx;
+  height: 36rpx;
+  background: #1dc779;
+  border-radius: 8rpx;
+  color: #fff;
+  vertical-align: text-top;
+  margin-left: 10rpx;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  text-align: center;
+  &.close {
+    background: #999;
+  }
+}
+.class-item {
+  margin-bottom: 30rpx;
+  background-color: #fff;
+  padding: 16rpx;
+  border-radius: 8rpx;
+}
+
+.class-item:last-child {
+  min-height: 100vh;
+}
